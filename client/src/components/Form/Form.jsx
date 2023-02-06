@@ -48,7 +48,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
   return <Paper className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.form} ${classes.root}`} onSubmit={handleSubmit}>
-          <Typography variant="h6" className={classes.heading}>Let's Create a Memory!</Typography>
+          <Typography variant="h6" className={classes.heading}>Let's {currentId ? 'Edit' : 'Create'} a Memory!</Typography>
           <TextField name="creator" variant="outlined" label="Creator" fullWidth
             value={postData.creator} 
             onChange={(e) => setPostData({ ...postData, creator: e.target.value })} // spread operator to keep the other values
