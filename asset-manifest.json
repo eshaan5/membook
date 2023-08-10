@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/membook/static/css/main.59851a23.chunk.css",
-    "main.js": "/membook/static/js/main.f65dc8a3.chunk.js",
-    "main.js.map": "/membook/static/js/main.f65dc8a3.chunk.js.map",
+    "main.js": "/membook/static/js/main.becde3cf.chunk.js",
+    "main.js.map": "/membook/static/js/main.becde3cf.chunk.js.map",
     "runtime-main.js": "/membook/static/js/runtime-main.13201716.js",
     "runtime-main.js.map": "/membook/static/js/runtime-main.13201716.js.map",
     "static/js/2.1de89497.chunk.js": "/membook/static/js/2.1de89497.chunk.js",
     "static/js/2.1de89497.chunk.js.map": "/membook/static/js/2.1de89497.chunk.js.map",
     "index.html": "/membook/index.html",
-    "precache-manifest.118c5fb3ca392629893e2bb8d559cd96.js": "/membook/precache-manifest.118c5fb3ca392629893e2bb8d559cd96.js",
+    "precache-manifest.0259a61a0ca02964f5b99f9026503133.js": "/membook/precache-manifest.0259a61a0ca02964f5b99f9026503133.js",
     "service-worker.js": "/membook/service-worker.js",
     "static/css/main.59851a23.chunk.css.map": "/membook/static/css/main.59851a23.chunk.css.map",
     "static/js/2.1de89497.chunk.js.LICENSE.txt": "/membook/static/js/2.1de89497.chunk.js.LICENSE.txt",
-    "static/js/main.f65dc8a3.chunk.js.LICENSE.txt": "/membook/static/js/main.f65dc8a3.chunk.js.LICENSE.txt",
+    "static/js/main.becde3cf.chunk.js.LICENSE.txt": "/membook/static/js/main.becde3cf.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/membook/static/media/logo.5c0c63fb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.13201716.js",
     "static/js/2.1de89497.chunk.js",
     "static/css/main.59851a23.chunk.css",
-    "static/js/main.f65dc8a3.chunk.js"
+    "static/js/main.becde3cf.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e64af1468ca7d415dc262b08f2dc839d",
+    "revision": "0ec88b0a45c20f0e6a3144d5c1126d50",
     "url": "/membook/index.html"
   },
   {
-    "revision": "4cae357ca0cbf321628c",
+    "revision": "eac441b543fe56926e35",
     "url": "/membook/static/css/main.59851a23.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/membook/static/js/2.1de89497.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4cae357ca0cbf321628c",
-    "url": "/membook/static/js/main.f65dc8a3.chunk.js"
+    "revision": "eac441b543fe56926e35",
+    "url": "/membook/static/js/main.becde3cf.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/membook/static/js/main.f65dc8a3.chunk.js.LICENSE.txt"
+    "url": "/membook/static/js/main.becde3cf.chunk.js.LICENSE.txt"
   },
   {
     "revision": "5da1cbad722fc6b86698",
