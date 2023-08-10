@@ -4,7 +4,7 @@ import firebase from "firebase/compat/app";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API,
+  apiKey: "AIzaSyBMorcWL_O8yOEnqpj-nHdrLf7w1VKXuoM",
   authDomain: "membook.firebaseapp.com",
   projectId: "membook",
   storageBucket: "membook.appspot.com",
