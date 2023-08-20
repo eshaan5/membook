@@ -26,9 +26,7 @@ const Post = ({ post, setCurrentId }) => {
         <>
           <ThumbUpOffAltIcon fontSize="small" />
           &nbsp;
-          {post.likes.length > 2
-            ? `You and ${post.likes.length - 1} others`
-            : `${post.likes.length} like${post.likes.length > 1 ? "s" : ""}`}
+          {post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? "s" : ""}`}
         </>
       ) : (
         <>
@@ -43,26 +41,31 @@ const Post = ({ post, setCurrentId }) => {
         &nbsp;Like
       </>
     );
-  }
+  };
 
   const openPost = () => navigate(`/posts/${post._id}`);
 
   return (
     <Card className={classes.card} raised elevation={6}>
       <ButtonBase className={classes.cardAction} onClick={openPost}>
-      <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
+        {post.selectedFile && <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />}
+      </ButtonBase>
       <div className={classes.overlay}>
         <Typography variant="h5">{post.name}</Typography>
         <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
       </div>
       <div className={classes.overlay2}>
         {(user?.uid === post?.creator || user?._id === post?.creator) && (
-          <Button style={{ color: "white" }} size="small" onClick={(e) => {
-            e.stopPropagation();
-            setCurrentId(post._id);
-          }}>
-          <MoreHorizIcon fontSize="default" />
-        </Button>
+          <Button
+            style={{ color: "white" }}
+            size="small"
+            onClick={(e) => {
+              e.stopPropagation();
+              setCurrentId(post._id);
+            }}
+          >
+            <MoreHorizIcon fontSize="default" />
+          </Button>
         )}
       </div>
       <CardContent>
@@ -73,24 +76,34 @@ const Post = ({ post, setCurrentId }) => {
           {post.caption}
         </Typography>
         <div className={classes.details}>
-        <Typography variant="body2" color="textSecondary">
-          {post.tags.map((tag) => `#${tag} `)}
-        </Typography>
-      </div>
+          <Typography variant="body2" color="textSecondary">
+            {post.tags.map((tag) => `#${tag} `)}
+          </Typography>
+        </div>
       </CardContent>
-      </ButtonBase>
       <CardActions className={classes.cardActions}>
-        <Button size="small" color="primary" disabled={!user} onClick={() => {return dispatch(likePost(post._id))}}>
+        <Button
+          size="small"
+          color="primary"
+          disabled={!user}
+          onClick={() => {
+            return dispatch(likePost(post._id));
+          }}
+        >
           <Likes />
         </Button>
         {(user?.uid === post?.creator || user?._id === post?.creator) && (
-          <Button size="small" color="primary" onClick={() => {
-            dispatch(deletePost(post._id));
-            setCurrentId(null);
-          }}>
+          <Button
+            size="small"
+            color="primary"
+            onClick={() => {
+              dispatch(deletePost(post._id));
+              setCurrentId(null);
+            }}
+          >
             <DeleteIcon fontSize="small" />
           </Button>
-          )}
+        )}
       </CardActions>
     </Card>
   );
